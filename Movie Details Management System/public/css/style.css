@@ -1,0 +1,292 @@
+body {
+  width: 100%;
+}
+
+a {
+  text-decoration: none !important;
+  color: #fff;
+  align-self: center;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #fff;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+  align-self: flex-end;
+  width: 20%;
+  display: inline;
+}
+
+/* Disable spin buttons of number feild */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input,
+select {
+  width: 100%;
+  margin-bottom: 15px;
+  display: inline-block;
+  padding: 5px
+}
+
+/* List page table*/
+table {
+  word-wrap: break-word !important;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+td,
+th {
+  padding: 5px !important;
+  width: 200px !important;
+  max-width: 200px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* View, Edit, Delete Buttons - List page */
+td a {
+  width: 30%;
+  padding: 2px 5px;
+  word-wrap: normal;
+  font-size: 13px;
+  display: inline-block;
+  border-radius: 2px !important;
+}
+
+/* span - movie details - details page */
+span {
+  width: 75%;
+  display: inline-block;
+  vertical-align: text-top !important;
+  margin-bottom: 15px;
+}
+
+/* navigation link - jump to pages */
+.nav {
+  width: fit-content !important;
+}
+
+.details {
+  width: 80%;
+  margin: 50px auto;
+  vertical-align: text-top !important;
+  word-wrap: break-word;
+}
+
+/* lables for the details */
+.details p {
+  align-self: self-start;
+  display: inline-block !important;
+  width: 25%;
+}
+
+/* delete review  button icon */
+.trash-icon {
+  font-size: 12px;
+}
+
+.reviews i {
+  color: #000;
+  font-size: 100%;
+}
+
+/* p - reviews- details page */
+.review p {
+  display: inline;
+  width: 100%;
+}
+
+.add-review a {
+  color: #308d37;
+  border: solid 2px #308d37;
+}
+
+/* input for review */
+.review-input-div {
+  position: relative;
+  display: none;
+}
+
+/* submit button for review */
+.review-submit-button {
+  position: absolute;
+  right: 0;
+}
+
+
+/* media queries */
+@media (max-width :1280px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  table {
+    font-size: 16px;
+  }
+
+  table a {
+    font-size: 10px;
+  }
+
+  /* Reviews heading */
+  h3,
+  h4 {
+    font-size: 15px
+  }
+
+  .details,
+  .review-submit-button {
+    width: auto;
+    font-size: 16px;
+  }
+
+  .nav {
+    font-size: 13px;
+  }
+
+  .modal,
+  .modal button,
+  .modal h4,
+  .modal a {
+    font-size: 16px;
+    left: auto !important;
+  }
+}
+
+@media (max-width :768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  table {
+    font-size: 13px;
+  }
+
+  select {
+    font-size: 13px;
+  }
+
+  table a {
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .details,
+  .review-submit-button {
+    width: auto;
+    font-size: 13px;
+  }
+
+  .nav {
+    font-size: 12px;
+  }
+
+  /* Delete confirmation modal - list page */
+  .modal {
+    position: absolute;
+  }
+
+  .modal,
+  .modal button,
+  .modal h4,
+  .modal a {
+    font-size: 10px;
+    left: auto !important;
+  }
+
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding: 5px !important;
+  }
+}
+
+@media (max-width :450px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  form button,
+  table,
+  table a,
+  input,
+  label {
+    font-size: 10px !important;
+  }
+
+  h3,
+  h4 {
+    font-size: 15px
+  }
+
+  .details,
+  .review-submit-button {
+    width: auto;
+    font-size: 12px;
+  }
+
+  .nav {
+    font-size: 10px;
+  }
+}
+
+@media (max-width :370px) {
+  h1 {
+    font-size: 15px;
+  }
+
+  h3,
+  h4 {
+    font-size: 12px
+  }
+
+  input,
+  label {
+    font-size: 9px;
+    width: 100%;
+  }
+
+  form button {
+    font-size: 9px !important;
+  }
+
+  /* span - reviews- details page */
+  span {
+    width: 60%;
+  }
+
+  table {
+    font-size: 8px;
+  }
+
+  td a {
+    font-size: 8px;
+  }
+
+  .details,
+  .review-submit-button {
+    font-size: 12px;
+  }
+
+  .nav {
+    font-size: 8px;
+  }
+
+  /* labels for the movie details */
+  .details>p {
+    width: 40%;
+  }
+
+}
